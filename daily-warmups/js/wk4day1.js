@@ -1,12 +1,14 @@
 
 
 // 1. Return a string in reverse
+var word = "kayak";
 
 function revString(input) {
-    input.split();
-    input.reverse();
-    return input.join();
+    input.split().reverse().join();
+    return input;
 }
+
+revString(word);
 
 // function
 // ex. reverseString(‘hello’) === ‘olleh’
@@ -14,10 +16,10 @@ function revString(input) {
 //     return //Something
 // };
 
+
+
 function palindrome(input) {
-    var rev = input.split();
-    rev.reverse();
-    rev.join()
+    var rev = input.split().reverse().join();
     if (rev === input) {
         return true;
     }
